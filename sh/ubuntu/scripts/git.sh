@@ -1,17 +1,7 @@
 #!/bin/sh
+#BASIC DEVELOPMENT - GIT
 
-GIT_IS_AVAILABLE="$(git --version 2>&1 >/dev/null)"
+source ./sh/util.sh
 
-if [[ ${GIT_IS_AVAILABLE} == '' ]]; then
-    
-    echo -e "${bakgrn}[installed][Git]${txtrst} already installed ;)" ;
-	
-else
-
-	echo -e "${bakcyn}[Git] Start Install ${txtrst}";
-	
-	apt-get install git-core -y;
-	
-	echo -e "${bakgrn}[Git] Finish Install ${txtrst}";
-
-fi
+add-apt-repository -y ppa:git-core/ppa
+doInstall GIT "git --version 2>&1 >/dev/null" "apt-get install git-core git git-gui gitk -y"

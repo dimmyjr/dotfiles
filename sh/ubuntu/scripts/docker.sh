@@ -1,4 +1,5 @@
 #!/bin/sh
+#DEVELOPMENT - DOCKER
 
 DOCKER_IS_AVAILABLE="$(docker -v 2>&1 >/dev/null)"
 
