@@ -11,9 +11,9 @@ else
 
 	echo -e "${bakcyn}[GOLANG] Start Install ${txtrst}";
 
-    add-apt-repository ppa:longsleep/golang-backports
-    apt-get update
-    apt-get install golang-go
+    add-apt-repository ppa:longsleep/golang-backports -y
+    apt-get update -y
+    apt-get install golang-go -y
 
 	echo -e "${bakgrn}[GOLANG] Finish Install ${txtrst}";
 

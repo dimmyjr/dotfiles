@@ -1,3 +1,6 @@
+#!/bin/bash
+#INTERNET - SPOTIFY
+
 Spotify
 
 curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add -

@@ -3,5 +3,4 @@
 
 source ./sh/util.sh
 
-add-apt-repository -y ppa:git-core/ppa
-doInstall GIT "git --version 2>&1 >/dev/null" "apt-get install git-core git git-gui gitk -y"
+doInstall GIT "git --version" "add-apt-repository -y ppa:git-core/ppa && apt-get install git-core git git-gui gitk -y"

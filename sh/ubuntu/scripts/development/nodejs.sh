@@ -1,4 +1,5 @@
 #!/bin/sh
+#DEVELOPMENT - NODEJS
 
 NODEJS_IS_AVAILABLE="$(node -v 2>&1 >/dev/null)";
 
