@@ -1,24 +1,29 @@
-#!/bin/sh
+#!/bin/bash
+
+clear
 
 . sh/common/init.sh ;
 
 echo -e "\n\n\n\n";
-echo -e "          888          888     .d888 d8b 888";
-echo -e "          888          888    d88P   Y8P 888";
-echo -e "          888          888    888        888";
-echo -e "      .d88888  .d88b.  888888 888888 888 888  .d88b.  .d8888b";
-echo -e "     d88  888 d88  88b 888    888    888 888 d8P  Y8b 88K";
-echo -e "     888  888 888  888 888    888    888 888 88888888 Y8888b.";
-echo -e "     Y88b 888 Y88..88P Y88b.  888    888 888 Y8b.          X88";
-echo -e "       Y88888   Y88P     Y888 888    888 888   Y8888   88888P'";
-echo -e "                                                             ${bakblu}rtancman${txtrst}";
-echo -e "\n${BGreen} Start...${txtrst}\n";
+echo -e "  888             d8b  d8b                   888             ";
+echo -e "  888             Y8P  Y8P                   888             ";
+echo -e "  888                                        888             ";
+echo -e "  888888  8888b.  888 8888 888  888 .d8888b  888888 888  888 ";
+echo -e "  888         88b 888  888 888  888 88K      888    888  888 ";
+echo -e "  888    .d888888 888  888 888  888  Y8888b. 888    888  888 ";
+echo -e "  Y88b.  888  888 888  888 Y88b 888      X88 Y88b.  Y88b 888 ";
+echo -e "    Y888  Y888888 888  888  Y88888  88888P   Y888   Y88888   ";
+echo -e "                       888                                   ";
+echo -e "                      d88P                                   ";
+echo -e "                    888P                                     ";
+echo -e "                                                             ${bakblu}dimmyjr${txtrst}";
+echo -e "\n${BRed} Start...${txtrst}\n";
 
-if [ $DOTFILE_OS == "OSX" ]; then
+if [[ $DOTFILE_OS == "OSX" ]]; then
 
     . sh/osx/main.sh;
 
-elif [ $UID != 0 ]; then
+elif [[ $UID != 0 ]]; then
 
     echo -e "${bakred} [Error] You must run with root! ${txtrst}";
 

@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 . sh/common/params.sh ;
 
-if [ $DOTFILE_OS == "OSX" ]; then
+if [[ $DOTFILE_OS == "OSX" ]]; then
 
     . sh/common/collors-osx.sh ;
 

@@ -14,7 +14,7 @@ echo -e "${bakblu}[Ubuntu]${txtrst} install basic";
 . sh/ubuntu/basic.sh 
 
 echo -e "${bakblu}[Ubuntu]${txtrst} finish basic\n";
-set -x
+
 APPS=()
 OPTIONS=()
 COUNTER=1
@@ -35,13 +35,10 @@ TITLE="Title here"
 MENU="Choose one of the following options:"
 
 CHOICE="$(dialog --stdout --checklist Select 50 100 50 $OPTIONS)"
-
+clear
 for i in $CHOICE
 do
-  # echo "$i - ${APPS[i]}"
   "${APPS[i]}"
 done
 
 echo -e "\n${bakblu}[Ubuntu][Install][Finish]${txtrst}";
-
-#$dialog --stdout --checklist teste 10 100 100 1 "BASIC DEVELOPMENT GIT" off 2 "DEVELOPMENT DOCKER" off
